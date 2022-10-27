@@ -1,0 +1,43 @@
+
+.messages-settings {
+  font-size: 15px;
+
+  .header {
+    display: flex;
+    padding: 15px 10px;
+
+    .header-btn {
+      margin-right: 10px;
+    }
+
+    .header-name {
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+
+    .header-desc {
+      color: rgb(133, 150, 166)
+    }
+  }
+
+
+  .settings-item {
+    padding: 10px;
+
+    .icon {
+      padding-right: 10px;
+    }
+
+    .msg {
+      width: 220px;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .msg-sec {
+      color: rgb(133, 150, 166);
+      font-size: 15px;
+      margin: 0;
+    }
+  }
+}

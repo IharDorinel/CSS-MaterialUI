@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {Header} from "./components/Header";
+import UserHeader from "./components/UserHeader";
+import {SalesOverview} from "./components/SalesOverview";
+import InfoTip from "./components/InfoTip";
+import FolderOpenOutlinedIcon from '@mui/icons-material/FolderOpenOutlined';
+import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
+import {OrdersChat} from "./components/OrdersChat";
+import AvatarTip from "./components/AvatarTip";
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+        <UserHeader/>
+        <div className={'app-cont'}>
+            <div className={'app-cont-f'}>
+                <SalesOverview/>
+            </div>
+            <div className={'app-cont-sec'}>
+                <InfoTip
+                    bg={'linear-gradient(135deg, rgb(56, 184, 242), rgb(132, 60, 246))'}
+                    num={286}
+                    desc={'Docs'}
+                    icon={<FolderOpenOutlinedIcon/>}
+                />
+                <OrdersChat/>
+                <InfoTip
+                    bg={'linear-gradient(135deg, rgb(251, 199, 154), rgb(215, 62, 104))'}
+                    num={286}
+                    desc={'Docs'}
+                    icon={<EmojiObjectsOutlinedIcon/>}
+                />
+                <AvatarTip/>
+            </div>
+        </div>
     </div>
   );
 }

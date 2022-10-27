@@ -1,0 +1,12 @@
+
+.search-input {
+  width: 100%;
+  font-size: 15px;
+  box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+  background: white;
+  border-radius: 30px;
+
+  .MuiOutlinedInput-root fieldset {
+    border: none;
+  }
+}
